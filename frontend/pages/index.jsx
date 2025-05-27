@@ -62,6 +62,8 @@ function Home() {
   const router = useRouter();
   const { data: home } = useGetHomeQuery();
 
+  console.log('home', home);
+
   const renderCounts = {
     newArrival: home?.data?.attributes?.newArrival?.renderCount,
     categories: home?.data?.attributes?.categories?.renderCount,

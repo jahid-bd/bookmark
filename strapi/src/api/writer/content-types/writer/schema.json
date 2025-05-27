@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "writers",
+  "info": {
+    "singularName": "writer",
+    "pluralName": "writers",
+    "displayName": "Writer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "renderCount": {
+      "type": "integer"
+    },
+    "searchPlaceholder": {
+      "type": "string"
+    }
+  }
+}

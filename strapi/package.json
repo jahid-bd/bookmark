@@ -1,0 +1,46 @@
+{
+  "name": "strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "dev": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "seed": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=SEED strapi start",
+    "seed:prod": "cross-env NODE_ENV=production yarn seed",
+    "reset": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=RESET strapi start",
+    "reset:prod": "cross-env NODE_ENV=production yarn reset",
+    "seed:models": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=SEED_MODELS strapi start",
+    "reset:models": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=RESET_MODELS strapi start",
+    "relate:models": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=RELATE_MODELS strapi start",
+    "seed:medias": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=SEED_MEDIAS strapi start",
+    "reset:medias": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=RESET_MEDIAS strapi start"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@faker-js/faker": "7.6.0",
+    "@strapi/plugin-i18n": "4.11.1",
+    "@strapi/plugin-users-permissions": "4.11.1",
+    "@strapi/provider-upload-cloudinary": "^4.4.7",
+    "pg": "^8.8.0",
+    "pg-connection-string": "^2.5.0",
+    "@strapi/strapi": "4.11.1",
+    "axios": "^1.9.0",
+    "better-sqlite3": "8.0.1",
+    "seed": "^0.4.4",
+    "yaml": "^2.8.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "9abfa2ed-1b5d-4942-936c-48885a8682e8"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

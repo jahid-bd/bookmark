@@ -6,10 +6,9 @@ import CardTitle from '../PublicationCard/CardTitle';
 import { ImgContainerStyle } from './Styles';
 
 function AuthorCard({ author }) {
-  const {
-    attributes: { name, avatar },
-    id
-  } = author;
+  const name = author?.attributes?.name || 'Unknown Author';
+  const avatar = author?.attributes?.avatar || null;
+  const id = author?.id;
 
   const url = avatar?.data?.attributes?.url || '/images/author-dummy.png';
   return (

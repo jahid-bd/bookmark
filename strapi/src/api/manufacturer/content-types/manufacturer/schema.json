@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "manufacturers",
+  "info": {
+    "singularName": "manufacturer",
+    "pluralName": "manufacturers",
+    "displayName": "Manufacturer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "renderCount": {
+      "type": "integer"
+    },
+    "searchPlaceholder": {
+      "type": "string"
+    }
+  }
+}
