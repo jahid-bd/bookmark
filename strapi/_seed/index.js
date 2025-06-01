@@ -41,7 +41,7 @@ async function forceAction(strapi) {
   } catch (e) {
     console.error(e);
   } finally {
-    process.exit(0);
+    // process.exit(0);
   }
 }
 

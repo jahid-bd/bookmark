@@ -18,7 +18,6 @@ module.exports = {
    */
   async bootstrap({ strapi }) {
     if (process.env.FORCE_APP_BOOTSTRAP_ONLY_TO) {
-      console.log(strapi.db.config);
       await forceAction(strapi);
     }
   }
