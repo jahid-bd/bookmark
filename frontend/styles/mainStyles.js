@@ -1,6 +1,7 @@
 import { Link, Typography } from '@mui/material';
 import { Box, styled } from '@mui/system';
 
+// Todo fix continer style
 export const ContainerStyle = styled(Box)(() => ({}));
 
 export const HeroContainer = styled(Box)(() => ({
