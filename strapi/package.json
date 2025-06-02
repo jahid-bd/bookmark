@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "seed": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=SEED strapi start",
+    "seed": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=SEED",
     "seed:prod": "cross-env NODE_ENV=production yarn seed",
     "reset": "cross-env FORCE_APP_BOOTSTRAP_ONLY_TO=RESET strapi start",
     "reset:prod": "cross-env NODE_ENV=production yarn reset",
