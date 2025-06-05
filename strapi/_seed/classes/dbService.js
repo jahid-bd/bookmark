@@ -228,9 +228,12 @@ class DbService {
         (model) => model.medias
       )) {
         for (const media of medias) {
+          console.log(`Uploading media for ${modelName} model:`, media);
           const { fieldName, path, type, multi } = media;
           const exactPath = resolve(process.cwd(), ...path.split('/'));
           const files = getFiles(exactPath);
+
+          console.log('files', files);
 
           for (const { basename, ext } of files) {
             const uploadFile = await this.strapiService.uploadFile({
@@ -245,6 +248,7 @@ class DbService {
                 type: `${type ? type + '/' : ''}${ext}`
               }
             });
+            console.log('uploadFile', uploadFile);
             const modelKey = `${modelName}:${fieldName}`;
 
             if (mediaMap.has(modelKey)) {
@@ -287,6 +291,7 @@ class DbService {
       }
       console.info('✅ releate medias completed');
     } catch (e) {
+      console.log('Error while seeding medias:', e);
       console.log(e.message);
     }
   }
